@@ -1,7 +1,7 @@
 machine:
   pre:
     - curl -sSL https://s3.amazonaws.com/circle-downloads/install-circleci-docker.sh | bash -s -- 1.10.0
-    - curl -sSL https://storage.googleapis.com/golang/go1.7.4.linux-amd64.tar.gz | tar xz -C /usr/local
+    - curl -sSL https://storage.googleapis.com/golang/go1.7.4.linux-amd64.tar.gz | sudo tar xz -C /usr/local
   services:
     - docker
 
